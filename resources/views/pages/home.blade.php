@@ -1,18 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+@extends('layouts.app')
 
-    <title>Pinned by ESN</title>
+@section('title', 'Pinned by ESN | Custom Button Pins')
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-<body>
+@section(
+    'description',
+    'Pinned by ESN creates pre-designed, customized, commissioned, and bulk button pins for individuals, organizations, and events.'
+)
 
-    <h1>Pinned by ESN</h1>
+@section('content')
+    <section class="min-h-screen flex items-center justify-center px-6">
+        <div class="text-center">
+            <p class="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-red-800">
+                Pinned by ESN
+            </p>
 
-    <p>Pinning your ideas to life.</p>
+            <h1 class="text-5xl font-bold text-red-950 md:text-7xl">
+                Pinning your ideas to life.
+            </h1>
 
-</body>
-</html>
+            <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-stone-600">
+                Custom and pre-designed button pins made for your ideas,
+                organizations, events, and everyday style.
+            </p>
+
+            <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+                <x-button href="#products">
+                    Order Now
+                </x-button>
+
+                <x-button href="#products" variant="secondary">
+                    Explore Pins
+                </x-button>
+            </div>
+        </div>
+    </section>
+@endsection
