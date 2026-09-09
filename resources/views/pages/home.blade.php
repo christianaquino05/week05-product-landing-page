@@ -17,4 +17,6 @@
 
     <x-product-showcase />
 
+    <x-order-process />
+
 @endsection
