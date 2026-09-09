@@ -1,6 +1,6 @@
 <section
     id="home"
-    class="relative min-h-screen overflow-hidden bg-stone-50 pt-28"
+    class="relative min-h-screen overflow-x-hidden bg-stone-50 pt-28"
 >
     {{-- Decorative background --}}
     <div
@@ -14,7 +14,7 @@
     ></div>
 
     <div
-        class="relative mx-auto grid min-h-[calc(100vh-7rem)] max-w-7xl items-center gap-14 px-6 pb-16 lg:grid-cols-2 lg:gap-10 lg:px-8"
+        class="relative mx-auto grid min-h-[calc(100vh-7rem)] max-w-7xl items-center gap-8 px-6 pb-16 lg:grid-cols-2 lg:gap-10 lg:px-8"
     >
         {{-- Hero Content --}}
         <div class="max-w-2xl text-center lg:text-left">
@@ -73,7 +73,7 @@
         </div>
 
         {{-- Product Visual --}}
-        <div class="relative mx-auto h-[390px] w-full max-w-lg sm:h-[500px]">
+        <div class="relative mx-auto h-[500px] w-full max-w-lg sm:h-[500px]">
 
             {{-- Decorative dotted pattern --}}
             <div
