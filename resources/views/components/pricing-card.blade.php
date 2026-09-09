@@ -18,7 +18,7 @@
 >
     @if ($featured)
         <span class="inline-flex rounded-full bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-red-100">
-            Most Popular
+            Made Your Way
         </span>
     @endif
 
