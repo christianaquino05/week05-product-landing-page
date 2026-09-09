@@ -8,7 +8,8 @@
 )
 
 @section('content')
-    <section class="min-h-screen flex items-center justify-center px-6">
+<x-navbar />
+    <section id="home" class="min-h-screen flex items-center justify-center px-6">
         <div class="text-center">
             <p class="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-red-800">
                 Pinned by ESN
