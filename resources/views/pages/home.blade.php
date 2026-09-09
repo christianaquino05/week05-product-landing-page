@@ -23,4 +23,8 @@
 
     <x-testimonials />
 
+    <x-cta />
+
+    <x-footer />
+
 @endsection
