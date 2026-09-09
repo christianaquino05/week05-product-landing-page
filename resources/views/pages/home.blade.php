@@ -19,4 +19,6 @@
 
     <x-order-process />
 
+    <x-pricing />
+
 @endsection
