@@ -26,18 +26,28 @@
             {{-- Bloom Buddies --}}
             <article class="group">
                 <div class="relative aspect-square overflow-hidden rounded-3xl bg-rose-100">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <div
-                            class="flex h-40 w-40 rotate-[-6deg] items-center justify-center rounded-full border-[8px] border-white bg-rose-300 text-center text-red-950 shadow-xl transition duration-300 group-hover:rotate-0 group-hover:scale-105"
+                    <div class="absolute inset-0 flex items-center justify-center gap-2 p-6">
+                        <img
+                            src="{{ asset('images/pin-designs/bloombuddy1.png') }}"
+                            alt="Bloom Buddies button pin design 1"
+                            class="w-[37%] -rotate-6 drop-shadow-lg transition duration-300 group-hover:-translate-y-2"
                         >
-                            <span class="text-lg font-bold uppercase tracking-wide">
-                                Bloom<br>Buddies
-                            </span>
-                        </div>
+
+                        <img
+                            src="{{ asset('images/pin-designs/bloombuddy2.png') }}"
+                            alt="Bloom Buddies button pin design 2"
+                            class="z-10 w-[42%] drop-shadow-xl transition duration-300 group-hover:-translate-y-3"
+                        >
+
+                        <img
+                            src="{{ asset('images/pin-designs/bloombuddy3.png') }}"
+                            alt="Bloom Buddies button pin design 3"
+                            class="w-[37%] rotate-6 drop-shadow-lg transition duration-300 group-hover:-translate-y-2"
+                        >
                     </div>
 
                     <span
-                        class="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-red-900"
+                        class="absolute left-4 top-4 z-20 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-red-900"
                     >
                         Pre-Designed
                     </span>
@@ -63,18 +73,28 @@
             {{-- Spirit Animal --}}
             <article class="group">
                 <div class="relative aspect-square overflow-hidden rounded-3xl bg-stone-200">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <div
-                            class="flex h-40 w-40 rotate-[7deg] items-center justify-center rounded-full border-[8px] border-white bg-stone-800 text-center text-white shadow-xl transition duration-300 group-hover:rotate-0 group-hover:scale-105"
+                    <div class="absolute inset-0 flex items-center justify-center gap-2 p-6">
+                        <img
+                            src="{{ asset('images/pin-designs/spirit-animal1.png') }}"
+                            alt="Spirit Animal button pin design 1"
+                            class="w-[37%] -rotate-6 drop-shadow-lg transition duration-300 group-hover:-translate-y-2"
                         >
-                            <span class="text-lg font-bold uppercase tracking-wide">
-                                Spirit<br>Animal
-                            </span>
-                        </div>
+
+                        <img
+                            src="{{ asset('images/pin-designs/spirit-animal2.png') }}"
+                            alt="Spirit Animal button pin design 2"
+                            class="z-10 w-[42%] drop-shadow-xl transition duration-300 group-hover:-translate-y-3"
+                        >
+
+                        <img
+                            src="{{ asset('images/pin-designs/spirit-animal3.png') }}"
+                            alt="Spirit Animal button pin design 3"
+                            class="w-[37%] rotate-6 drop-shadow-lg transition duration-300 group-hover:-translate-y-2"
+                        >
                     </div>
 
                     <span
-                        class="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-red-900"
+                        class="absolute left-4 top-4 z-20 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-red-900"
                     >
                         Pre-Designed
                     </span>
@@ -100,18 +120,28 @@
             {{-- College Series --}}
             <article class="group">
                 <div class="relative aspect-square overflow-hidden rounded-3xl bg-red-100">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <div
-                            class="flex h-40 w-40 rotate-[-4deg] items-center justify-center rounded-full border-[8px] border-white bg-red-900 text-center text-white shadow-xl transition duration-300 group-hover:rotate-0 group-hover:scale-105"
+                    <div class="absolute inset-0 flex items-center justify-center gap-2 p-6">
+                        <img
+                            src="{{ asset('images/pin-designs/college-series1.png') }}"
+                            alt="College Series button pin design 1"
+                            class="w-[37%] -rotate-6 drop-shadow-lg transition duration-300 group-hover:-translate-y-2"
                         >
-                            <span class="text-lg font-bold uppercase tracking-wide">
-                                College<br>Series
-                            </span>
-                        </div>
+
+                        <img
+                            src="{{ asset('images/pin-designs/college-series2.png') }}"
+                            alt="College Series button pin design 2"
+                            class="z-10 w-[42%] drop-shadow-xl transition duration-300 group-hover:-translate-y-3"
+                        >
+
+                        <img
+                            src="{{ asset('images/pin-designs/college-series3.png') }}"
+                            alt="College Series button pin design 3"
+                            class="w-[37%] rotate-6 drop-shadow-lg transition duration-300 group-hover:-translate-y-2"
+                        >
                     </div>
 
                     <span
-                        class="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-red-900"
+                        class="absolute left-4 top-4 z-20 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-red-900"
                     >
                         Pre-Designed
                     </span>
@@ -137,18 +167,28 @@
             {{-- Vocal Stims --}}
             <article class="group">
                 <div class="relative aspect-square overflow-hidden rounded-3xl bg-amber-50">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <div
-                            class="flex h-40 w-40 rotate-[5deg] items-center justify-center rounded-full border-[8px] border-white bg-red-200 text-center text-red-950 shadow-xl transition duration-300 group-hover:rotate-0 group-hover:scale-105"
+                    <div class="absolute inset-0 flex items-center justify-center gap-2 p-6">
+                        <img
+                            src="{{ asset('images/pin-designs/vocal-stim1.png') }}"
+                            alt="Vocal Stims button pin design 1"
+                            class="w-[37%] -rotate-6 drop-shadow-lg transition duration-300 group-hover:-translate-y-2"
                         >
-                            <span class="text-lg font-bold uppercase tracking-wide">
-                                Vocal<br>Stims
-                            </span>
-                        </div>
+
+                        <img
+                            src="{{ asset('images/pin-designs/vocal-stim2.png') }}"
+                            alt="Vocal Stims button pin design 2"
+                            class="z-10 w-[42%] drop-shadow-xl transition duration-300 group-hover:-translate-y-3"
+                        >
+
+                        <img
+                            src="{{ asset('images/pin-designs/vocal-stim3.png') }}"
+                            alt="Vocal Stims button pin design 3"
+                            class="w-[37%] rotate-6 drop-shadow-lg transition duration-300 group-hover:-translate-y-2"
+                        >
                     </div>
 
                     <span
-                        class="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-red-900"
+                        class="absolute left-4 top-4 z-20 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-red-900"
                     >
                         Pre-Designed
                     </span>
