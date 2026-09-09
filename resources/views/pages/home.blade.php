@@ -13,4 +13,6 @@
 
     <x-hero />
 
+    <x-features />
+
 @endsection
