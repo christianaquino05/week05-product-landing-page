@@ -15,4 +15,6 @@
 
     <x-features />
 
+    <x-product-showcase />
+
 @endsection
