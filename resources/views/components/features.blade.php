@@ -25,37 +25,43 @@
         <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 
             <x-feature-card
-                number="01"
-                title="Mystery Pins"
-                description="A surprise button pin for customers who want something unexpected and fun."
+    number="01"
+    icon="mystery"
+    title="Mystery Pins"
+    description="A surprise button pin for customers who want something unexpected and fun."
             />
 
             <x-feature-card
                 number="02"
+                icon="collection"
                 title="Pre-Designed Pins"
                 description="Choose from existing PINNED. collections such as Bloom Buddies, Spirit Animal, College Series, and Vocal Stims."
             />
 
             <x-feature-card
                 number="03"
+                icon="custom"
                 title="Custom Pins"
                 description="Turn your own artwork or provided design into a personalized button pin."
             />
 
             <x-feature-card
                 number="04"
+                icon="commission"
                 title="Commissioned Pins"
                 description="Have PINNED. create a design specifically for your idea before producing the final pin."
             />
 
             <x-feature-card
                 number="05"
+                icon="bulk"
                 title="Bulk Orders"
                 description="Perfect for organizations, events, and large orders, with bulk pricing available for a minimum of 100 pieces."
             />
 
             <x-feature-card
                 number="06"
+                icon="finish"
                 title="Finishes & Styles"
                 description="Choose from Matte, Glossy, or Holo finishes, with Glitter and Rainbow options available for an additional ₱2."
             />
