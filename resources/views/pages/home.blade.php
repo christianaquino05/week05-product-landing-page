@@ -21,4 +21,6 @@
 
     <x-pricing />
 
+    <x-testimonials />
+
 @endsection
