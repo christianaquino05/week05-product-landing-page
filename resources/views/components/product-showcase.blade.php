@@ -214,159 +214,272 @@
         </div>
 
         {{-- Custom Pin Showcase --}}
-        <div
-            class="mt-24 grid items-center gap-12 rounded-[2rem] bg-red-950 px-6 py-10 text-white sm:px-10 lg:grid-cols-2 lg:px-14 lg:py-14"
-        >
-            {{-- Mockup --}}
-            <div class="relative mx-auto w-full max-w-lg">
-                <div class="rounded-3xl bg-white p-4 shadow-2xl">
-                    <div class="rounded-2xl bg-stone-100 p-5 sm:p-7">
+<div
+    class="mt-24 grid items-center gap-12 rounded-[2rem] bg-red-950 px-6 py-12 text-white sm:px-10 sm:py-16 lg:grid-cols-2 lg:px-14 lg:py-20"
+>
+    {{-- Preview Area --}}
+    <div class="relative mx-auto w-full max-w-xl pb-10 sm:pb-16">
 
-                        {{-- Fake editor header --}}
-                        <div class="flex items-center justify-between">
-                            <div>
-                                <p class="text-xs font-bold uppercase tracking-[0.2em] text-red-800">
-                                    Pin Preview
-                                </p>
+        {{-- Desktop / Dashboard Preview --}}
+        <div class="rounded-3xl bg-white p-4 shadow-2xl">
+            <div class="rounded-2xl bg-stone-100 p-5 sm:p-7">
 
-                                <p class="mt-1 text-sm text-stone-500">
-                                    Customize your idea
-                                </p>
-                            </div>
+                {{-- Editor Header --}}
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-xs font-bold uppercase tracking-[0.2em] text-red-800">
+                            Pin Preview
+                        </p>
 
-                            <span
-                                class="rounded-full bg-green-100 px-3 py-1 text-xs font-semibold text-green-700"
-                            >
-                                Ready
+                        <p class="mt-1 text-sm text-stone-500">
+                            Customize your idea
+                        </p>
+                    </div>
+
+                    <span
+                        class="rounded-full bg-green-100 px-3 py-1 text-xs font-semibold text-green-700"
+                    >
+                        Ready
+                    </span>
+                </div>
+
+                {{-- Pin Preview --}}
+                <div class="flex min-h-64 items-center justify-center">
+                    <div
+                        class="flex h-44 w-44 items-center justify-center rounded-full border-[8px] border-white bg-red-900 text-center text-white shadow-xl sm:h-52 sm:w-52"
+                    >
+                        <div>
+                            <span class="block text-xs uppercase tracking-[0.25em] text-red-100">
+                                Your
+                            </span>
+
+                            <span class="mt-1 block text-3xl font-bold">
+                                DESIGN
+                            </span>
+
+                            <span class="mt-1 block text-xs italic text-red-100">
+                                goes here.
                             </span>
                         </div>
+                    </div>
+                </div>
 
-                        {{-- Pin preview --}}
-                        <div class="flex min-h-64 items-center justify-center">
+                {{-- Controls --}}
+                <div class="grid grid-cols-3 gap-2">
+                    <div class="rounded-xl bg-white p-3 text-center">
+                        <span class="block text-xs font-bold text-red-950">
+                            32mm
+                        </span>
+
+                        <span class="text-[11px] text-stone-400">
+                            Size
+                        </span>
+                    </div>
+
+                    <div class="rounded-xl bg-white p-3 text-center">
+                        <span class="block text-xs font-bold text-red-950">
+                            Matte
+                        </span>
+
+                        <span class="text-[11px] text-stone-400">
+                            Finish
+                        </span>
+                    </div>
+
+                    <div class="rounded-xl bg-white p-3 text-center">
+                        <span class="block text-xs font-bold text-red-950">
+                            Custom
+                        </span>
+
+                        <span class="text-[11px] text-stone-400">
+                            Type
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        {{-- Mobile View --}}
+        <div
+            class="relative mx-auto -mt-5 w-[190px] sm:absolute sm:-bottom-5 sm:-right-5 sm:mt-0 sm:w-[205px] lg:-right-8"
+        >
+            <p
+                class="mb-2 text-center text-[10px] font-bold uppercase tracking-[0.25em] text-red-200"
+            >
+                Mobile View
+            </p>
+
+            {{-- Phone Frame --}}
+            <div
+                class="rounded-[2.4rem] border-[7px] border-stone-900 bg-stone-900 p-1 shadow-2xl"
+            >
+                <div class="overflow-hidden rounded-[1.85rem] bg-[#fffaf6]">
+
+                    {{-- Phone Header --}}
+                    <div class="relative bg-red-900 px-4 pb-4 pt-7 text-white">
+
+                        <div
+                            class="absolute left-1/2 top-2 h-4 w-16 -translate-x-1/2 rounded-full bg-stone-900"
+                            aria-hidden="true"
+                        ></div>
+
+                        <p class="text-[8px] font-bold uppercase tracking-[0.2em] text-red-200">
+                            PINNED.
+                        </p>
+
+                        <p class="mt-1 text-sm font-bold">
+                            Custom Pin
+                        </p>
+
+                        <p class="mt-1 text-[9px] text-red-200">
+                            Preview your idea.
+                        </p>
+                    </div>
+
+                    {{-- Phone Content --}}
+                    <div class="p-4">
+
+                        <div class="flex justify-center py-2">
                             <div
-                                class="flex h-44 w-44 items-center justify-center rounded-full border-[8px] border-white bg-red-900 text-center text-white shadow-xl sm:h-52 sm:w-52"
+                                class="flex h-20 w-20 items-center justify-center rounded-full border-[5px] border-white bg-red-900 text-center text-white shadow-lg"
                             >
                                 <div>
-                                    <span class="block text-xs uppercase tracking-[0.25em] text-red-100">
+                                    <span class="block text-[6px] uppercase tracking-[0.15em] text-red-200">
                                         Your
                                     </span>
 
-                                    <span class="mt-1 block text-3xl font-bold">
+                                    <span class="block text-[10px] font-bold">
                                         DESIGN
                                     </span>
 
-                                    <span class="mt-1 block text-xs italic text-red-100">
+                                    <span class="block text-[6px] italic text-red-200">
                                         goes here.
                                     </span>
                                 </div>
                             </div>
                         </div>
 
-                        {{-- Fake controls --}}
-                        <div class="grid grid-cols-3 gap-2">
-                            <div class="rounded-xl bg-white p-3 text-center">
-                                <span class="block text-xs font-bold text-red-950">
-                                    32mm
-                                </span>
-                                <span class="text-[11px] text-stone-400">
+                        <div class="mt-3 space-y-2">
+
+                            <div class="flex items-center justify-between rounded-lg bg-white px-3 py-2 shadow-sm">
+                                <span class="text-[8px] text-stone-400">
                                     Size
                                 </span>
+
+                                <span class="text-[8px] font-bold text-red-950">
+                                    32mm
+                                </span>
                             </div>
 
-                            <div class="rounded-xl bg-white p-3 text-center">
-                                <span class="block text-xs font-bold text-red-950">
-                                    Matte
-                                </span>
-                                <span class="text-[11px] text-stone-400">
+                            <div class="flex items-center justify-between rounded-lg bg-white px-3 py-2 shadow-sm">
+                                <span class="text-[8px] text-stone-400">
                                     Finish
                                 </span>
+
+                                <span class="text-[8px] font-bold text-red-950">
+                                    Matte
+                                </span>
                             </div>
 
-                            <div class="rounded-xl bg-white p-3 text-center">
-                                <span class="block text-xs font-bold text-red-950">
-                                    Custom
-                                </span>
-                                <span class="text-[11px] text-stone-400">
+                            <div class="flex items-center justify-between rounded-lg bg-white px-3 py-2 shadow-sm">
+                                <span class="text-[8px] text-stone-400">
                                     Type
                                 </span>
+
+                                <span class="text-[8px] font-bold text-red-950">
+                                    Custom
+                                </span>
                             </div>
+
+                        </div>
+
+                        <div
+                            class="mt-3 rounded-full bg-red-900 py-2 text-center text-[8px] font-bold text-white"
+                        >
+                            Ready to Order
                         </div>
 
                     </div>
                 </div>
             </div>
-
-            {{-- Showcase text --}}
-            <div>
-                <p class="text-xs font-bold uppercase tracking-[0.3em] text-red-200 sm:text-sm">
-                    Your idea, your pin
-                </p>
-
-                <h2 class="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
-                    Make it personal.
-                </h2>
-
-                <p class="mt-6 max-w-xl leading-7 text-red-100">
-                    Already have a design in mind? Turn your artwork into a
-                    custom button pin, or commission PINNED. to create a
-                    design based on your idea.
-                </p>
-
-                <div class="mt-8 grid gap-5 sm:grid-cols-2">
-                    <div>
-                        <p class="font-bold">
-                            Custom Pins
-                        </p>
-
-                        <p class="mt-1 text-sm leading-6 text-red-200">
-                            Submit your own design and have it turned into
-                            a button pin.
-                        </p>
-                    </div>
-
-                    <div>
-                        <p class="font-bold">
-                            Commissioned Pins
-                        </p>
-
-                        <p class="mt-1 text-sm leading-6 text-red-200">
-                            Let PINNED. create the design for you before
-                            producing your pin.
-                        </p>
-                    </div>
-
-                    <div>
-                        <p class="font-bold">
-                            Two Sizes
-                        </p>
-
-                        <p class="mt-1 text-sm leading-6 text-red-200">
-                            Choose between 32mm and 44mm.
-                        </p>
-                    </div>
-
-                    <div>
-                        <p class="font-bold">
-                            Multiple Finishes
-                        </p>
-
-                        <p class="mt-1 text-sm leading-6 text-red-200">
-                            Matte, Glossy, Holo, Glitter, and Rainbow
-                            options are available.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="mt-9">
-                    <a
-                        href="#pricing"
-                        class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 font-semibold text-red-950 transition hover:bg-red-100"
-                    >
-                        See Pricing
-                    </a>
-                </div>
-            </div>
         </div>
+
+    </div>
+
+    {{-- Showcase Text --}}
+    <div>
+        <p class="text-xs font-bold uppercase tracking-[0.3em] text-red-200 sm:text-sm">
+            Your idea, your pin
+        </p>
+
+        <h2 class="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
+            Make it personal.
+        </h2>
+
+        <p class="mt-6 max-w-xl leading-7 text-red-100">
+            Already have a design in mind? Turn your artwork into a
+            custom button pin, or commission PINNED. to create a
+            design based on your idea.
+        </p>
+
+        <div class="mt-8 grid gap-5 sm:grid-cols-2">
+
+            <div>
+                <p class="font-bold">
+                    Custom Pins
+                </p>
+
+                <p class="mt-1 text-sm leading-6 text-red-200">
+                    Submit your own design and have it turned into
+                    a button pin.
+                </p>
+            </div>
+
+            <div>
+                <p class="font-bold">
+                    Commissioned Pins
+                </p>
+
+                <p class="mt-1 text-sm leading-6 text-red-200">
+                    Let PINNED. create the design for you before
+                    producing your pin.
+                </p>
+            </div>
+
+            <div>
+                <p class="font-bold">
+                    Two Sizes
+                </p>
+
+                <p class="mt-1 text-sm leading-6 text-red-200">
+                    Choose between 32mm and 44mm.
+                </p>
+            </div>
+
+            <div>
+                <p class="font-bold">
+                    Multiple Finishes
+                </p>
+
+                <p class="mt-1 text-sm leading-6 text-red-200">
+                    Matte, Glossy, Holo, Glitter, and Rainbow
+                    options are available.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="mt-9">
+            <a
+                href="#pricing"
+                class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 font-semibold text-red-950 transition hover:bg-red-100"
+            >
+                See Pricing
+            </a>
+        </div>
+    </div>
+</div>
 
     </div>
 </section>
