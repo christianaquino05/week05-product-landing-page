@@ -529,15 +529,14 @@ Development was divided into logical commits for:
 - UI refinements
 - Sign In interface preview
 
+
+```markdown
 ### GitHub Repository
 
 ![GitHub Repository](screenshots/github-repository.png)
 
-Repository Link:
-
-```text
-Add public GitHub repository URL here
-```
+**Repository Link:**  
+https://github.com/christianaquino05/week05-product-landing-page
 
 ---
 
@@ -557,7 +556,7 @@ Make sure the following are installed:
 Clone the repository:
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/christianaquino05/week05-product-landing-page.git
 ```
 
 Open the project directory:
