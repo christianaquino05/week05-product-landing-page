@@ -7,16 +7,21 @@
             <div>
                 <a
                     href="#home"
-                    class="text-2xl font-bold tracking-wide text-red-950"
+                    class="inline-flex items-center"
+                    aria-label="Pinned by ESN home"
                 >
-                    PINNED<span class="text-red-700">.</span>
+                    <img
+                        src="{{ asset('images/logo/pinned-logo-navbar.png') }}"
+                        alt="Pinned by ESN"
+                        class="h-16 w-auto object-contain"
+                    >
                 </a>
 
                 <p class="mt-4 max-w-xs text-sm leading-6 text-stone-600">
                     Pinning your ideas to life through pre-designed,
                     customized, commissioned, and bulk button pins.
                 </p>
-                
+
                 {{-- Social Media --}}
                 <div class="mt-6 flex items-center gap-3">
 
@@ -58,20 +63,8 @@
                             class="h-5 w-5"
                             aria-hidden="true"
                         >
-                            <rect
-                                x="3.5"
-                                y="3.5"
-                                width="17"
-                                height="17"
-                                rx="5"
-                            />
-
-                            <circle
-                                cx="12"
-                                cy="12"
-                                r="4"
-                            />
-
+                            <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
+                            <circle cx="12" cy="12" r="4" />
                             <circle
                                 cx="17.4"
                                 cy="6.7"
@@ -118,7 +111,7 @@
 
             {{-- Quick Links --}}
             <div>
-                <h3 class="font-bold text-red-950">
+                <h3 class="text-lg font-bold text-red-950">
                     Quick Links
                 </h3>
 
@@ -147,7 +140,7 @@
 
             {{-- Products --}}
             <div>
-                <h3 class="font-bold text-red-950">
+                <h3 class="text-lg font-bold text-red-950">
                     Products
                 </h3>
 
@@ -162,7 +155,7 @@
 
             {{-- Contact --}}
             <div>
-                <h3 class="font-bold text-red-950">
+                <h3 class="text-lg font-bold text-red-950">
                     Contact
                 </h3>
 

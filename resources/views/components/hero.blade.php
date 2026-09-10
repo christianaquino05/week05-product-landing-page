@@ -17,14 +17,14 @@
         class="relative mx-auto grid min-h-[calc(100vh-7rem)] max-w-7xl items-center gap-8 px-6 pb-16 lg:grid-cols-2 lg:gap-10 lg:px-8"
     >
         {{-- Hero Content --}}
-        <div class="max-w-2xl text-center lg:text-left">
+        <div class="mx-auto w-full max-w-2xl text-center lg:mx-0 lg:text-left">
             <p class="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-red-800 sm:text-sm">
                 Made for you. Pinned by us.
             </p>
 
-            <h1 class="text-5xl font-bold leading-[0.95] tracking-tight text-red-950 sm:text-6xl lg:text-7xl">
+            <h1 class="text-5xl font-bold leading-[0.95] tracking-[-0.025em] text-red-950 sm:text-6xl lg:text-7xl">
                 Pinning your
-                <span class="block italic font-medium">
+                <span class="block italic font-semibold">
                     ideas to life.
                 </span>
             </h1>
@@ -73,11 +73,11 @@
         </div>
 
         {{-- Product Visual --}}
-        <div class="relative mx-auto h-[500px] w-full max-w-lg sm:h-[500px]">
+        <div class="relative mx-auto h-[480px] w-full max-w-lg sm:h-[520px]">
 
             {{-- Decorative dotted pattern --}}
             <div
-                class="absolute right-2 top-8 grid grid-cols-5 gap-3 opacity-30"
+                class="absolute right-3 top-8 grid grid-cols-5 gap-3 opacity-25"
                 aria-hidden="true"
             >
                 @for ($i = 0; $i < 20; $i++)
@@ -85,9 +85,15 @@
                 @endfor
             </div>
 
-            {{-- Large pin --}}
+            {{-- Decorative ring --}}
             <div
-                class="absolute left-1/2 top-1/2 flex h-56 w-56 -translate-x-1/2 -translate-y-1/2 rotate-3 items-center justify-center rounded-full border-[10px] border-white bg-red-900 text-center text-white shadow-2xl sm:h-72 sm:w-72"
+                class="absolute left-1/2 top-1/2 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full border border-red-100 sm:h-[390px] sm:w-[390px]"
+                aria-hidden="true"
+            ></div>
+
+            {{-- Main Custom Pin --}}
+            <div
+                class="absolute left-1/2 top-1/2 z-20 flex h-56 w-56 -translate-x-1/2 -translate-y-1/2 rotate-3 items-center justify-center rounded-full border-[10px] border-white bg-red-900 text-center text-white shadow-2xl transition duration-500 hover:rotate-0 hover:scale-[1.03] sm:h-72 sm:w-72"
             >
                 <div>
                     <span class="block text-xs uppercase tracking-[0.3em] text-red-100">
@@ -104,38 +110,53 @@
                 </div>
             </div>
 
-            {{-- Small pin: 32mm --}}
+            {{-- Real Pin: Bloom Buddies --}}
             <div
-                class="absolute left-2 top-8 flex h-28 w-28 -rotate-12 items-center justify-center rounded-full border-[7px] border-white bg-rose-200 text-center text-red-950 shadow-xl sm:left-4 sm:h-36 sm:w-36"
+                class="absolute left-0 top-6 z-30 w-28 -rotate-12 transition duration-500 hover:-translate-y-2 hover:rotate-0 sm:left-2 sm:w-36"
             >
-                <div>
-                    <span class="block text-2xl font-bold">32</span>
-                    <span class="text-xs font-semibold uppercase tracking-widest">
-                        mm
-                    </span>
-                </div>
+                <img
+                    src="{{ asset('images/pin-designs/bloombuddy2.png') }}"
+                    alt="Bloom Buddies button pin by Pinned by ESN"
+                    class="h-auto w-full drop-shadow-xl"
+                >
             </div>
 
-            {{-- Small pin: 44mm --}}
+            {{-- Real Pin: Spirit Animal --}}
             <div
-                class="absolute bottom-6 right-3 flex h-32 w-32 rotate-12 items-center justify-center rounded-full border-[7px] border-white bg-stone-800 text-center text-white shadow-xl sm:h-40 sm:w-40"
+                class="absolute bottom-3 right-0 z-30 w-32 rotate-12 transition duration-500 hover:-translate-y-2 hover:rotate-3 sm:right-0 sm:w-40"
             >
-                <div>
-                    <span class="block text-3xl font-bold">44</span>
-                    <span class="text-xs font-semibold uppercase tracking-widest">
-                        mm
-                    </span>
-                </div>
+                <img
+                    src="{{ asset('images/pin-designs/spirit-animal2.png') }}"
+                    alt="Spirit Animal button pin by Pinned by ESN"
+                    class="h-auto w-full drop-shadow-xl"
+                >
             </div>
 
-            {{-- Small custom pin --}}
+            {{-- Real Pin: College Series --}}
             <div
-                class="absolute bottom-2 left-5 flex h-24 w-24 -rotate-6 items-center justify-center rounded-full border-[6px] border-white bg-red-100 text-center text-red-950 shadow-lg sm:bottom-10 sm:left-0 sm:h-28 sm:w-28"
+                class="absolute bottom-4 left-2 z-30 w-28 -rotate-6 transition duration-500 hover:-translate-y-2 hover:rotate-0 sm:bottom-8 sm:left-0 sm:w-32"
             >
-                <span class="text-xs font-bold uppercase leading-4 tracking-wider">
-                    Custom<br>Pin
-                </span>
+                <img
+                    src="{{ asset('images/pin-designs/college-series3.png') }}"
+                    alt="Vocal Stims button pin by Pinned by ESN"
+                    class="h-auto w-full drop-shadow-lg"
+                >
             </div>
+
+            {{-- Floating size label --}}
+            <div
+                class="absolute right-5 top-24 z-30 rounded-full border border-red-100 bg-white/90 px-4 py-2 text-xs font-semibold text-red-950 shadow-sm backdrop-blur-sm sm:right-0"
+            >
+                32mm & 44mm
+            </div>
+
+            {{-- Custom label --}}
+            <div
+                class="absolute left-1/2 top-[82%] z-30 -translate-x-1/2 rounded-full border border-red-100 bg-white/90 px-4 py-2 text-xs font-semibold text-red-950 shadow-sm backdrop-blur-sm sm:top-[86%]"
+            >
+                Made your way.
+            </div>
+
         </div>
     </div>
 </section>
