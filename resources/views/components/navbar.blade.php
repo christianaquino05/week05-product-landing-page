@@ -1,56 +1,60 @@
 <header class="absolute inset-x-0 top-0 z-50">
     <nav
-        class="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-8"
+        class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8"
         aria-label="Main navigation"
     >
-        {{-- Brand --}}
+        {{-- Brand Logo --}}
         <a
-            href="#home"
-            class="text-2xl font-bold tracking-wide text-red-950"
+            href="{{ url('/') }}#home"
+            class="inline-flex items-center"
             aria-label="Pinned by ESN home"
         >
-            PINNED<span class="text-red-700">.</span>
+            <img
+                src="{{ asset('images/logo/pinned-logo-navbar.png') }}"
+                alt="Pinned by ESN"
+                class="h-12 w-auto object-contain sm:h-14"
+            >
         </a>
 
         {{-- Desktop Navigation --}}
         <div class="hidden items-center gap-8 lg:flex">
             <a
-                href="#home"
+                href="{{ url('/') }}#home"
                 class="text-sm font-medium text-stone-700 transition hover:text-red-900"
             >
                 Home
             </a>
 
             <a
-                href="#features"
+                href="{{ url('/') }}#features"
                 class="text-sm font-medium text-stone-700 transition hover:text-red-900"
             >
                 Pins
             </a>
 
             <a
-                href="#process"
+                href="{{ url('/') }}#process"
                 class="text-sm font-medium text-stone-700 transition hover:text-red-900"
             >
                 How It Works
             </a>
 
             <a
-                href="#pricing"
+                href="{{ url('/') }}#pricing"
                 class="text-sm font-medium text-stone-700 transition hover:text-red-900"
             >
                 Pricing
             </a>
 
             <a
-                href="#testimonials"
+                href="{{ url('/') }}#testimonials"
                 class="text-sm font-medium text-stone-700 transition hover:text-red-900"
             >
                 Reviews
             </a>
 
             <a
-                href="#contact"
+                href="{{ url('/') }}#contact"
                 class="text-sm font-medium text-stone-700 transition hover:text-red-900"
             >
                 Contact
@@ -58,17 +62,16 @@
         </div>
 
         {{-- Desktop Actions --}}
-        <div class="hidden items-center gap-3 lg:flex">
-            <x-button
-                href="#"
-                variant="secondary"
-                class="px-5 py-2.5 text-sm"
+        <div class="hidden items-center gap-5 lg:flex">
+            <a
+                href="{{ route('signin') }}"
+                class="text-sm font-semibold text-red-950 transition hover:text-red-700"
             >
                 Sign In
-            </x-button>
+            </a>
 
             <x-button
-                href="#contact"
+                href="{{ url('/') }}#contact"
                 class="px-5 py-2.5 text-sm"
             >
                 Get Started
@@ -108,60 +111,60 @@
     >
         <div class="flex flex-col gap-1">
             <a
-                href="#home"
+                href="{{ url('/') }}#home"
                 class="rounded-lg px-3 py-2.5 text-sm font-medium text-stone-700 hover:bg-red-50 hover:text-red-900"
             >
                 Home
             </a>
 
             <a
-                href="#features"
+                href="{{ url('/') }}#features"
                 class="rounded-lg px-3 py-2.5 text-sm font-medium text-stone-700 hover:bg-red-50 hover:text-red-900"
             >
                 Pins
             </a>
 
             <a
-                href="#process"
+                href="{{ url('/') }}#process"
                 class="rounded-lg px-3 py-2.5 text-sm font-medium text-stone-700 hover:bg-red-50 hover:text-red-900"
             >
                 How It Works
             </a>
 
             <a
-                href="#pricing"
+                href="{{ url('/') }}#pricing"
                 class="rounded-lg px-3 py-2.5 text-sm font-medium text-stone-700 hover:bg-red-50 hover:text-red-900"
             >
                 Pricing
             </a>
 
             <a
-                href="#testimonials"
+                href="{{ url('/') }}#testimonials"
                 class="rounded-lg px-3 py-2.5 text-sm font-medium text-stone-700 hover:bg-red-50 hover:text-red-900"
             >
                 Reviews
             </a>
 
             <a
-                href="#contact"
+                href="{{ url('/') }}#contact"
                 class="rounded-lg px-3 py-2.5 text-sm font-medium text-stone-700 hover:bg-red-50 hover:text-red-900"
             >
                 Contact
             </a>
-        </div>
 
-        <div class="mt-4 grid grid-cols-2 gap-3 border-t border-stone-100 pt-4">
-            <x-button
-                href="#"
-                variant="secondary"
-                class="text-sm"
+            <a
+                href="{{ route('signin') }}"
+                class="rounded-lg px-3 py-2.5 text-sm font-semibold text-red-950 transition hover:bg-red-50 hover:text-red-900"
             >
                 Sign In
-            </x-button>
+            </a>
+        </div>
 
+        {{-- Mobile Action --}}
+        <div class="mt-4 border-t border-stone-100 pt-4">
             <x-button
-                href="#contact"
-                class="text-sm"
+                href="{{ url('/') }}#contact"
+                class="w-full text-sm"
             >
                 Get Started
             </x-button>
