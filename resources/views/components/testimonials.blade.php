@@ -1,10 +1,21 @@
 <section
     id="testimonials"
-    class="bg-[#fffaf6] py-24 sm:py-28"
+    class="relative overflow-hidden bg-[#fffaf6] py-24 sm:py-28"
 >
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    {{-- Decorative background --}}
+    <div
+        class="pointer-events-none absolute -left-20 top-16 h-56 w-56 rounded-full bg-red-100/40 blur-3xl"
+        aria-hidden="true"
+    ></div>
 
-        {{-- Section heading --}}
+    <div
+        class="pointer-events-none absolute -right-20 bottom-12 h-64 w-64 rounded-full bg-rose-100/40 blur-3xl"
+        aria-hidden="true"
+    ></div>
+
+    <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+
+        {{-- Section Heading --}}
         <div class="mx-auto max-w-2xl text-center">
             <p class="text-xs font-bold uppercase tracking-[0.3em] text-red-800 sm:text-sm">
                 Loved by our customers
@@ -44,6 +55,16 @@
                 feedback="i loveeee! worth the price!!"
             />
 
+        </div>
+
+        {{-- Trust Note --}}
+        <div class="mt-10 flex justify-center">
+            <div
+                class="inline-flex items-center gap-2 rounded-full border border-red-100 bg-white px-4 py-2 text-xs font-medium text-stone-500 shadow-sm"
+            >
+                <span class="h-2 w-2 rounded-full bg-red-700"></span>
+                Real feedback from PINNED. customers
+            </div>
         </div>
 
     </div>

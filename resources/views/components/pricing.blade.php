@@ -1,9 +1,21 @@
 <section
     id="pricing"
-    class="bg-stone-50 py-24 sm:py-28"
+    class="relative overflow-hidden bg-stone-50 py-24 sm:py-28"
 >
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    {{-- Decorative Background --}}
+    <div
+        class="pointer-events-none absolute -left-28 top-32 h-72 w-72 rounded-full bg-red-100/40 blur-3xl"
+        aria-hidden="true"
+    ></div>
 
+    <div
+        class="pointer-events-none absolute -right-28 bottom-28 h-80 w-80 rounded-full bg-rose-100/40 blur-3xl"
+        aria-hidden="true"
+    ></div>
+
+    <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+
+        {{-- Section Heading --}}
         <div class="mx-auto max-w-2xl text-center">
             <p class="text-xs font-bold uppercase tracking-[0.3em] text-red-800 sm:text-sm">
                 Simple pricing
@@ -20,7 +32,7 @@
         </div>
 
         {{-- Main Pricing Cards --}}
-        <div class="mt-14 grid gap-6 lg:grid-cols-3">
+        <div class="mt-14 grid items-stretch gap-6 lg:grid-cols-3">
 
             <x-pricing-card
                 title="Pre-Designed"
@@ -71,8 +83,14 @@
         </div>
 
         {{-- Bulk Pricing --}}
-        <div class="mt-16 overflow-hidden rounded-[2rem] border border-red-100 bg-white shadow-sm">
-            <div class="grid gap-8 px-6 py-8 sm:px-8 lg:grid-cols-[1fr_auto] lg:items-center lg:px-10">
+        <div
+            class="mt-16 overflow-hidden rounded-[2rem] border border-red-100 bg-white shadow-sm"
+        >
+
+            {{-- Bulk Header --}}
+            <div
+                class="grid gap-8 px-6 py-8 sm:px-8 lg:grid-cols-[1fr_auto] lg:items-center lg:px-10"
+            >
                 <div>
                     <p class="text-xs font-bold uppercase tracking-[0.25em] text-red-800">
                         Events & Organizations
@@ -93,68 +111,137 @@
                 </x-button>
             </div>
 
+            {{-- Bulk Table --}}
             <div class="overflow-x-auto border-t border-red-100">
                 <table class="w-full min-w-[620px] text-left">
-                    <thead class="bg-red-50">
+
+                    <thead class="bg-red-50/70">
                         <tr>
-                            <th class="px-6 py-4 text-sm font-bold text-red-950">
+                            <th class="px-6 py-4 text-xs font-bold uppercase tracking-[0.15em] text-red-950">
                                 Bulk Order
                             </th>
 
-                            <th class="px-6 py-4 text-sm font-bold text-red-950">
+                            <th class="px-6 py-4 text-xs font-bold uppercase tracking-[0.15em] text-red-950">
                                 32mm
                             </th>
 
-                            <th class="px-6 py-4 text-sm font-bold text-red-950">
+                            <th class="px-6 py-4 text-xs font-bold uppercase tracking-[0.15em] text-red-950">
                                 44mm
                             </th>
                         </tr>
                     </thead>
 
                     <tbody class="divide-y divide-stone-100">
-                        <tr>
-                            <td class="px-6 py-4 text-sm text-stone-700">
-                                No Packaging
+
+                        <tr class="transition hover:bg-red-50/40">
+                            <td class="px-6 py-5">
+                                <p class="text-sm font-semibold text-red-950">
+                                    No Packaging
+                                </p>
+
+                                <p class="mt-1 text-xs text-stone-400">
+                                    Minimum 100 pieces
+                                </p>
                             </td>
 
-                            <td class="px-6 py-4 text-sm font-semibold text-red-900">
-                                ₱6.75 / pc
+                            <td class="px-6 py-5">
+                                <span class="text-base font-bold text-red-900">
+                                    ₱6.75
+                                </span>
+
+                                <span class="text-xs text-stone-400">
+                                    / pc
+                                </span>
                             </td>
 
-                            <td class="px-6 py-4 text-sm font-semibold text-red-900">
-                                ₱9.25 / pc
+                            <td class="px-6 py-5">
+                                <span class="text-base font-bold text-red-900">
+                                    ₱9.25
+                                </span>
+
+                                <span class="text-xs text-stone-400">
+                                    / pc
+                                </span>
                             </td>
                         </tr>
 
-                        <tr>
-                            <td class="px-6 py-4 text-sm text-stone-700">
-                                With Packaging
+                        <tr class="transition hover:bg-red-50/40">
+                            <td class="px-6 py-5">
+                                <p class="text-sm font-semibold text-red-950">
+                                    With Packaging
+                                </p>
+
+                                <p class="mt-1 text-xs text-stone-400">
+                                    Minimum 100 pieces
+                                </p>
                             </td>
 
-                            <td class="px-6 py-4 text-sm font-semibold text-red-900">
-                                ₱9.75 / pc
+                            <td class="px-6 py-5">
+                                <span class="text-base font-bold text-red-900">
+                                    ₱9.75
+                                </span>
+
+                                <span class="text-xs text-stone-400">
+                                    / pc
+                                </span>
                             </td>
 
-                            <td class="px-6 py-4 text-sm font-semibold text-red-900">
-                                ₱12.40 / pc
+                            <td class="px-6 py-5">
+                                <span class="text-base font-bold text-red-900">
+                                    ₱12.40
+                                </span>
+
+                                <span class="text-xs text-stone-400">
+                                    / pc
+                                </span>
                             </td>
                         </tr>
+
                     </tbody>
                 </table>
             </div>
         </div>
 
-        {{-- Add-ons --}}
-        <div class="mt-10 text-center">
-            <p class="text-sm text-stone-500">
-                Available finishes:
-                <span class="font-semibold text-red-950">Matte</span>,
-                <span class="font-semibold text-red-950">Glossy</span>,
-                and
-                <span class="font-semibold text-red-950">Holo</span>.
-                Glitter and Rainbow options are available for
-                <span class="font-semibold text-red-950">+₱2</span>.
+        {{-- Finishes & Add-ons --}}
+        <div class="mt-10 flex flex-col items-center">
+
+            <p class="text-xs font-bold uppercase tracking-[0.2em] text-red-800">
+                Finishes & Add-ons
             </p>
+
+            <div class="mt-4 flex flex-wrap justify-center gap-2">
+
+                <span
+                    class="rounded-full border border-red-100 bg-white px-4 py-2 text-sm font-medium text-stone-600 shadow-sm"
+                >
+                    Matte
+                </span>
+
+                <span
+                    class="rounded-full border border-red-100 bg-white px-4 py-2 text-sm font-medium text-stone-600 shadow-sm"
+                >
+                    Glossy
+                </span>
+
+                <span
+                    class="rounded-full border border-red-100 bg-white px-4 py-2 text-sm font-medium text-stone-600 shadow-sm"
+                >
+                    Holo
+                </span>
+
+                <span
+                    class="rounded-full border border-red-200 bg-red-50 px-4 py-2 text-sm font-semibold text-red-900"
+                >
+                    Glitter +₱2
+                </span>
+
+                <span
+                    class="rounded-full border border-red-200 bg-red-50 px-4 py-2 text-sm font-semibold text-red-900"
+                >
+                    Rainbow +₱2
+                </span>
+
+            </div>
         </div>
 
     </div>
